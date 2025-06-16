@@ -2,10 +2,11 @@ import React from 'react'
 import logo1 from '../assets/Logo.jpeg'
 import logo2 from '../assets/logo2.jpeg'
 
-const Dashboard = () => {
+const DashBoard = () => {
   return (
      <>
         <div >
+
           <nav className="navbar navbar-expand-lg navbar-dark bg-dark " style={{height:"80px"}}>
             <div className="container-fluid">
             <img src={logo1} style={{height:"60px", width:"60px"}}></img>
@@ -48,4 +49,4 @@ const Dashboard = () => {
   )
 }
 
-export default Dashboard
+export default DashBoard

@@ -4,9 +4,9 @@ import './App.css'
 import { BrowserRouter,Route,Routes } from 'react-router-dom'
 import { studentData } from './Data/data'
 import studentReducer from './Reducer/StudentReducer'
-import Dashboard from './Components/Dashboard'
 import StudentTabletwo from './Components/StudentTabletwo'
 import StudentForm from './Components/StudentForm'
+import DashBoard from './Components/Dashboard'
 
 function App() {
   const [students, dispatch] = useReducer(studentReducer,studentData)
@@ -33,7 +33,7 @@ function App() {
   return (
     <>
      <BrowserRouter>
-      <Dashboard/>
+      <DashBoard/>
         <div className="container d-flex justify-content-center align-items-center" style={{ minHeight: "100vh" }}>
           <div style={{ }}>
            <StudentForm
